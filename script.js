@@ -14,3 +14,28 @@ if (emailList.includes(emailUtente)){ // se email esiste stampo il messagio "Acc
 }else { // altrimenti se email non concide con la lista nostra stampiamo il messagio "Email errato Accesso Negato"
     console. log("Email errato Accesso Negato");
 }
+
+
+//+++++++--------------------------------------++++//
+
+
+// Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+// Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+// Genero un numero random per il giocatore
+const punteggioGiocatore = Math.floor(Math.random() * 6) + 1;
+console. log(punteggioGiocatore, "Punteggio Giocatore");
+
+// Genero un numero random per il computer
+const punteggioComputer = Math.floor(Math.random() * 6) + 1;
+console. log(punteggioComputer, "Punteggio Computer");
+
+
+// per stablire il vincitre stabilisco una condizione con if , else if 
+if(punteggioComputer < punteggioGiocatore){
+    console. log("GIOCATORE HA VITO");
+}else if(punteggioComputer > punteggioGiocatore){
+    console. log("COMPUTER HA VINTO");
+}
+
+
